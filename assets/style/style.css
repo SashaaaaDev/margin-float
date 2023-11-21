@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: bisque;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.title,
+.nav__link {
+  color: darkslategray;
+}
+
+.nav__item {
+  transition: .2s;
+}
+
+.title {
+  font-size: 2.4em;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item:hover {
+  color: brown;
+  transform: scale(1.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+/*first*/
+.parent-fst,
+.parent-scn,
+.parent-thr {
+  width: 800px;
+  height: 100px;
+  border: 1px solid;
+}
+
+.parent-fst__child-fst,
+.parent-fst__child-sec {
+  height: 50px;
+  width: 50px;
+  margin: 25px;
+  border: 1px solid;
+}
+
+.parent-fst__child-fst {
+  float: left;
+}
+
+.parent-fst__child-sec {
+  float: right;
+}
+
+/*second*/
+.parent-scn__child-fst {
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
+  float: left;
+  margin: 25px;
+}
+
+.parent-scn__child-sc {
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  float: right;
+  margin: 37.5px 25px 0 0;
+}
+
+/*third*/
+.parent-thr__child-l,
+.parent-thr__child-r {
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
+}
+
+.parent-thr__child-l {
+  float: left;
+  margin: 25px 0 0 25px;
+}
+
+.parent-thr__child-r {
+  float: right;
+  margin: 25px 25px 0 0;
+}
+
+/*fourth*/
+.parent-fr {
+  height: 200px;
+  width: 800px;
+  border: 1px solid;
+}
+
+.parent-fr__child-fr {
+  height: 160px;
+  width: 100px;
+  border: 1px solid;
+  margin: 20px 0 0 290px;
+  float: left;
+}
+
+.parent-fr__child-sc,
+.parent-fr__child-th {
+  height: 70px;
+  width: 100px;
+  border: 1px solid;
+  margin: 20px 260px 0 20px;
+  float: left;
+}
+
+/*fifth*/
+.parent-fv {
+  height: 200px;
+  width: 800px;
+  border: 1px solid;
+  float: right;
+}
+
+.parent-fv__child-fr {
+  height: 160px;
+  width: 100px;
+  border: 1px solid;
+  float: right;
+  margin: 20px 20px 0 0;
+}
+
+.parent-fv__child-sc,
+.parent-fv__child-th {
+  height: 70px;
+  width: 100px;
+  border: 1px solid;
+  margin: 20px 20px 0 0;
+}
+
+.container-fv {
+  float: right;
+}
